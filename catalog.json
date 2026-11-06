@@ -1,0 +1,808 @@
+{
+  "version": "1.0.0",
+  "description": "N2 Persona Mask System — AI 전문가 마스크 인덱스",
+  "totalPersonas": 72,
+  "categories": [
+    {
+      "id": "dev",
+      "name": "개발 & 엔지니어링",
+      "icon": "🔧",
+      "count": 14,
+      "personas": [
+        {
+          "file": "web-frontend.md",
+          "name": "웹 프론트엔드 전문가",
+          "tags": [
+            "react",
+            "nextjs",
+            "typescript",
+            "css",
+            "ui"
+          ]
+        },
+        {
+          "file": "web-backend.md",
+          "name": "웹 백엔드 전문가",
+          "tags": [
+            "api",
+            "fastapi",
+            "nodejs",
+            "db",
+            "auth"
+          ]
+        },
+        {
+          "file": "fullstack.md",
+          "name": "풀스택 개발자",
+          "tags": [
+            "fullstack",
+            "architecture",
+            "integration"
+          ]
+        },
+        {
+          "file": "mobile-app.md",
+          "name": "모바일 앱 개발자",
+          "tags": [
+            "react-native",
+            "flutter",
+            "ios",
+            "android",
+            "pwa"
+          ]
+        },
+        {
+          "file": "devops.md",
+          "name": "DevOps 엔지니어",
+          "tags": [
+            "docker",
+            "k8s",
+            "cicd",
+            "terraform",
+            "monitoring"
+          ]
+        },
+        {
+          "file": "database.md",
+          "name": "데이터베이스 관리자",
+          "tags": [
+            "postgresql",
+            "mysql",
+            "redis",
+            "query",
+            "migration"
+          ]
+        },
+        {
+          "file": "cloud-architect.md",
+          "name": "클라우드 아키텍트",
+          "tags": [
+            "aws",
+            "gcp",
+            "azure",
+            "serverless",
+            "cost"
+          ]
+        },
+        {
+          "file": "security.md",
+          "name": "보안 전문가",
+          "tags": [
+            "owasp",
+            "pentest",
+            "encryption",
+            "compliance"
+          ]
+        },
+        {
+          "file": "qa-testing.md",
+          "name": "QA/테스트 엔지니어",
+          "tags": [
+            "playwright",
+            "jest",
+            "e2e",
+            "automation",
+            "quality"
+          ]
+        },
+        {
+          "file": "ai-ml-engineer.md",
+          "name": "AI/ML 엔지니어",
+          "tags": [
+            "pytorch",
+            "llm",
+            "rag",
+            "mlops",
+            "finetuning"
+          ]
+        },
+        {
+          "file": "data-scientist.md",
+          "name": "데이터 사이언티스트",
+          "tags": [
+            "statistics",
+            "ml",
+            "visualization",
+            "python"
+          ]
+        },
+        {
+          "file": "game-developer.md",
+          "name": "게임 개발자",
+          "tags": [
+            "unity",
+            "godot",
+            "physics",
+            "gameloop",
+            "webgl"
+          ]
+        },
+        {
+          "file": "embedded-iot.md",
+          "name": "임베디드/IoT 엔지니어",
+          "tags": [
+            "esp32",
+            "mqtt",
+            "firmware",
+            "sensor"
+          ]
+        },
+        {
+          "file": "api-architect.md",
+          "name": "API 설계 전문가",
+          "tags": [
+            "rest",
+            "graphql",
+            "openapi",
+            "sdk",
+            "docs"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "design",
+      "name": "디자인",
+      "icon": "🎨",
+      "count": 8,
+      "personas": [
+        {
+          "file": "ui-ux.md",
+          "name": "UI/UX 디자이너",
+          "tags": [
+            "figma",
+            "prototype",
+            "research",
+            "accessibility"
+          ]
+        },
+        {
+          "file": "web-design.md",
+          "name": "웹 디자이너",
+          "tags": [
+            "landing",
+            "responsive",
+            "layout",
+            "cta"
+          ]
+        },
+        {
+          "file": "graphic-design.md",
+          "name": "그래픽 디자이너",
+          "tags": [
+            "poster",
+            "banner",
+            "infographic",
+            "social"
+          ]
+        },
+        {
+          "file": "brand-identity.md",
+          "name": "브랜드 디자이너",
+          "tags": [
+            "logo",
+            "ci",
+            "guideline",
+            "identity"
+          ]
+        },
+        {
+          "file": "motion-graphics.md",
+          "name": "모션 그래픽 디자이너",
+          "tags": [
+            "aftereffects",
+            "lottie",
+            "animation"
+          ]
+        },
+        {
+          "file": "3d-modeling.md",
+          "name": "3D 모델러",
+          "tags": [
+            "blender",
+            "zbrush",
+            "texturing",
+            "rendering"
+          ]
+        },
+        {
+          "file": "illustration.md",
+          "name": "일러스트레이터",
+          "tags": [
+            "character",
+            "icon",
+            "vector",
+            "digital-art"
+          ]
+        },
+        {
+          "file": "print-design.md",
+          "name": "인쇄 디자이너",
+          "tags": [
+            "cmyk",
+            "indesign",
+            "brochure",
+            "packaging"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "content",
+      "name": "콘텐츠 & 크리에이터",
+      "icon": "✍️",
+      "count": 8,
+      "personas": [
+        {
+          "file": "youtube-creator.md",
+          "name": "유튜브 크리에이터",
+          "tags": [
+            "youtube",
+            "thumbnail",
+            "seo",
+            "editing"
+          ]
+        },
+        {
+          "file": "blog-writer.md",
+          "name": "블로그 전문가",
+          "tags": [
+            "blog",
+            "seo",
+            "adsense",
+            "wordpress"
+          ]
+        },
+        {
+          "file": "shorts-reels.md",
+          "name": "숏폼 전문가",
+          "tags": [
+            "tiktok",
+            "reels",
+            "shorts",
+            "viral"
+          ]
+        },
+        {
+          "file": "podcast-producer.md",
+          "name": "팟캐스트 프로듀서",
+          "tags": [
+            "podcast",
+            "audio",
+            "rss",
+            "interview"
+          ]
+        },
+        {
+          "file": "social-media.md",
+          "name": "소셜 미디어 매니저",
+          "tags": [
+            "instagram",
+            "twitter",
+            "linkedin",
+            "community"
+          ]
+        },
+        {
+          "file": "content-strategist.md",
+          "name": "콘텐츠 전략가",
+          "tags": [
+            "funnel",
+            "strategy",
+            "calendar",
+            "roi"
+          ]
+        },
+        {
+          "file": "livestream.md",
+          "name": "라이브 스트리밍 전문가",
+          "tags": [
+            "obs",
+            "twitch",
+            "live",
+            "chat"
+          ]
+        },
+        {
+          "file": "newsletter.md",
+          "name": "뉴스레터 전문가",
+          "tags": [
+            "email",
+            "substack",
+            "mailchimp",
+            "subscriber"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "writing",
+      "name": "글쓰기 & 출판",
+      "icon": "📝",
+      "count": 7,
+      "personas": [
+        {
+          "file": "novelist.md",
+          "name": "소설가/작가",
+          "tags": [
+            "story",
+            "character",
+            "worldbuilding",
+            "genre"
+          ]
+        },
+        {
+          "file": "copywriter.md",
+          "name": "카피라이터",
+          "tags": [
+            "ad",
+            "headline",
+            "cta",
+            "persuasion"
+          ]
+        },
+        {
+          "file": "technical-writer.md",
+          "name": "테크니컬 라이터",
+          "tags": [
+            "api-docs",
+            "guide",
+            "manual",
+            "markdown"
+          ]
+        },
+        {
+          "file": "screenwriter.md",
+          "name": "시나리오 작가",
+          "tags": [
+            "screenplay",
+            "dialogue",
+            "structure"
+          ]
+        },
+        {
+          "file": "translator.md",
+          "name": "번역 전문가",
+          "tags": [
+            "translation",
+            "localization",
+            "nuance"
+          ]
+        },
+        {
+          "file": "editor.md",
+          "name": "편집자/교정자",
+          "tags": [
+            "proofreading",
+            "factcheck",
+            "style"
+          ]
+        },
+        {
+          "file": "journalist.md",
+          "name": "저널리스트",
+          "tags": [
+            "news",
+            "interview",
+            "factcheck",
+            "reporting"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "media",
+      "name": "미디어 프로덕션",
+      "icon": "🎬",
+      "count": 6,
+      "personas": [
+        {
+          "file": "video-editor.md",
+          "name": "영상 편집자",
+          "tags": [
+            "premiere",
+            "davinci",
+            "editing",
+            "color"
+          ]
+        },
+        {
+          "file": "photographer.md",
+          "name": "사진 전문가",
+          "tags": [
+            "lightroom",
+            "composition",
+            "lighting"
+          ]
+        },
+        {
+          "file": "music-producer.md",
+          "name": "음악 프로듀서",
+          "tags": [
+            "daw",
+            "mixing",
+            "mastering",
+            "composition"
+          ]
+        },
+        {
+          "file": "sound-designer.md",
+          "name": "사운드 디자이너",
+          "tags": [
+            "sfx",
+            "foley",
+            "spatial",
+            "fmod"
+          ]
+        },
+        {
+          "file": "vfx-compositor.md",
+          "name": "VFX 합성 전문가",
+          "tags": [
+            "nuke",
+            "tracking",
+            "keying",
+            "compositing"
+          ]
+        },
+        {
+          "file": "color-grading.md",
+          "name": "컬러 그레이딩 전문가",
+          "tags": [
+            "davinci",
+            "lut",
+            "mood",
+            "colorist"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "business",
+      "name": "비즈니스 & 마케팅",
+      "icon": "💼",
+      "count": 9,
+      "personas": [
+        {
+          "file": "digital-marketing.md",
+          "name": "디지털 마케팅 전문가",
+          "tags": [
+            "ads",
+            "campaign",
+            "roas",
+            "funnel"
+          ]
+        },
+        {
+          "file": "seo-expert.md",
+          "name": "SEO 전문가",
+          "tags": [
+            "seo",
+            "keyword",
+            "backlink",
+            "technical-seo"
+          ]
+        },
+        {
+          "file": "project-manager.md",
+          "name": "프로젝트 매니저",
+          "tags": [
+            "agile",
+            "scrum",
+            "gantt",
+            "risk"
+          ]
+        },
+        {
+          "file": "product-manager.md",
+          "name": "프로덕트 매니저",
+          "tags": [
+            "prd",
+            "roadmap",
+            "ab-test",
+            "metrics"
+          ]
+        },
+        {
+          "file": "business-analyst.md",
+          "name": "비즈니스 분석가",
+          "tags": [
+            "requirements",
+            "process",
+            "bpmn"
+          ]
+        },
+        {
+          "file": "financial-analyst.md",
+          "name": "재무 분석가",
+          "tags": [
+            "finance",
+            "budget",
+            "forecast",
+            "model"
+          ]
+        },
+        {
+          "file": "sales-strategist.md",
+          "name": "영업 전략가",
+          "tags": [
+            "b2b",
+            "pipeline",
+            "crm",
+            "closing"
+          ]
+        },
+        {
+          "file": "hr-manager.md",
+          "name": "HR 매니저",
+          "tags": [
+            "hiring",
+            "onboarding",
+            "culture",
+            "labor-law"
+          ]
+        },
+        {
+          "file": "legal-advisor.md",
+          "name": "법률 자문가",
+          "tags": [
+            "contract",
+            "copyright",
+            "gdpr",
+            "compliance"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "data",
+      "name": "데이터 & 분석",
+      "icon": "📊",
+      "count": 5,
+      "personas": [
+        {
+          "file": "data-analyst.md",
+          "name": "데이터 분석가",
+          "tags": [
+            "sql",
+            "python",
+            "dashboard",
+            "insight"
+          ]
+        },
+        {
+          "file": "bi-specialist.md",
+          "name": "BI 전문가",
+          "tags": [
+            "tableau",
+            "powerbi",
+            "kpi",
+            "report"
+          ]
+        },
+        {
+          "file": "excel-master.md",
+          "name": "엑셀 마스터",
+          "tags": [
+            "excel",
+            "vba",
+            "pivot",
+            "automation"
+          ]
+        },
+        {
+          "file": "research-analyst.md",
+          "name": "리서치 분석가",
+          "tags": [
+            "market",
+            "competitor",
+            "trend",
+            "report"
+          ]
+        },
+        {
+          "file": "survey-designer.md",
+          "name": "설문 설계 전문가",
+          "tags": [
+            "survey",
+            "sampling",
+            "statistics",
+            "insight"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "education",
+      "name": "교육",
+      "icon": "🎓",
+      "count": 4,
+      "personas": [
+        {
+          "file": "online-instructor.md",
+          "name": "온라인 강사",
+          "tags": [
+            "course",
+            "lms",
+            "curriculum",
+            "engagement"
+          ]
+        },
+        {
+          "file": "elearning-designer.md",
+          "name": "이러닝 설계자",
+          "tags": [
+            "addie",
+            "interactive",
+            "assessment"
+          ]
+        },
+        {
+          "file": "curriculum-planner.md",
+          "name": "교육과정 기획자",
+          "tags": [
+            "learning-path",
+            "objectives",
+            "evaluation"
+          ]
+        },
+        {
+          "file": "tutor.md",
+          "name": "튜터/멘토",
+          "tags": [
+            "1on1",
+            "feedback",
+            "motivation",
+            "scaffolding"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "automation",
+      "name": "자동화 & 생산성",
+      "icon": "🤖",
+      "count": 5,
+      "personas": [
+        {
+          "file": "rpa-specialist.md",
+          "name": "RPA 전문가",
+          "tags": [
+            "uipath",
+            "bot",
+            "process-mining",
+            "automation"
+          ]
+        },
+        {
+          "file": "workflow-architect.md",
+          "name": "워크플로우 설계자",
+          "tags": [
+            "zapier",
+            "n8n",
+            "integration",
+            "api"
+          ]
+        },
+        {
+          "file": "chatbot-designer.md",
+          "name": "챗봇 설계자",
+          "tags": [
+            "nlu",
+            "dialog",
+            "intent",
+            "handoff"
+          ]
+        },
+        {
+          "file": "no-code-builder.md",
+          "name": "노코드 빌더",
+          "tags": [
+            "bubble",
+            "webflow",
+            "airtable",
+            "prototype"
+          ]
+        },
+        {
+          "file": "prompt-engineer.md",
+          "name": "프롬프트 엔지니어",
+          "tags": [
+            "prompt",
+            "chain-of-thought",
+            "evaluation",
+            "llm"
+          ]
+        }
+      ]
+    },
+    {
+      "id": "support",
+      "name": "운영 & 지원",
+      "icon": "🛠️",
+      "count": 6,
+      "personas": [
+        {
+          "file": "sysadmin.md",
+          "name": "시스템 관리자",
+          "tags": [
+            "linux",
+            "network",
+            "monitoring",
+            "backup"
+          ]
+        },
+        {
+          "file": "customer-support.md",
+          "name": "고객 지원 전문가",
+          "tags": [
+            "zendesk",
+            "csat",
+            "nps",
+            "ticketing"
+          ]
+        },
+        {
+          "file": "community-manager.md",
+          "name": "커뮤니티 매니저",
+          "tags": [
+            "discord",
+            "moderation",
+            "event",
+            "engagement"
+          ]
+        },
+        {
+          "file": "presentation-designer.md",
+          "name": "프레젠테이션 전문가",
+          "tags": [
+            "ppt",
+            "keynote",
+            "storytelling",
+            "chart"
+          ]
+        },
+        {
+          "file": "virtual-assistant.md",
+          "name": "가상 비서",
+          "tags": [
+            "calendar",
+            "email",
+            "research",
+            "meeting"
+          ]
+        },
+        {
+          "file": "localization.md",
+          "name": "현지화 전문가",
+          "tags": [
+            "i18n",
+            "l10n",
+            "translation",
+            "culture"
+          ]
+        }
+      ]
+    }
+  ]
+}
