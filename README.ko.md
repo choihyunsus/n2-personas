@@ -1,45 +1,52 @@
 # N2 Personas
 
-AI 애플리케이션에서 활용하는 10개 분야, 72개 역할 프롬프트입니다. Node.js 로더와 Markdown 원문을 제공합니다.
+**AI에게 맡길 역할을 골라 쓸 수 있는 72개의 지침 모음입니다.**
 
-## 설치와 사용
+[![release: 1.0.0](https://img.shields.io/badge/release-1.0.0-2563eb)](https://github.com/choihyunsus/n2-personas/releases/tag/v1.0.0) [![runtime: Node.js 22+](https://img.shields.io/badge/runtime-Node.js%2022%2B-334155)](https://github.com/choihyunsus/n2-personas/blob/main/docs/reference.ko.md) [![license: terms](https://img.shields.io/badge/license-terms-64748b)](https://github.com/choihyunsus/n2-personas/blob/main/LICENSE)
 
-Node.js 20 이상에서 GitHub 태그로 설치합니다.
+[English](README.md)
+
+![역할 고르기 → 작업 지침에 추가 → 결과 검토](https://github.com/choihyunsus/n2-personas/raw/refs/heads/main/docs/images/overview.ko.svg)
+
+## 이런 때 사용하세요
+
+웹 화면 검토, 글쓰기, 자료 분석처럼 작업마다 다른 관점을 요청할 때 활용하세요.
+
+역할 설명을 실제 모델 요청에 넣는 것은 연결한 앱의 몫입니다. 결과의 정확성과 전문성은 작업별로 확인하세요.
+
+## 처음 실행하기
+
+터미널에서 `node --version`을 실행해 Node.js 22 이상인지 확인하세요. 아래 명령은 새 연습 폴더를 만들고 GitHub 배포 파일을 설치합니다. 예제 파일과 DB도 이 폴더에 두면 경로를 따라가기 쉽습니다.
 
 ```sh
+mkdir n2-personas-demo
+cd n2-personas-demo
+npm init -y
 npm install github:choihyunsus/n2-personas#v1.0.0
 ```
 
+아래 내용을 `demo.mjs`로 저장하세요. 파일은 방금 설치 명령을 실행한 폴더에 둡니다.
+
 ```js
 import { listPersonas, getPersona } from 'n2-personas';
-
-console.log(listPersonas('dev'));
-const profile = getPersona('dev/web-frontend');
-console.log(profile.prompt);
+console.log(listPersonas().length);
+console.log(getPersona('dev/web-frontend').prompt);
 ```
 
-`listPersonas`는 역할 목록을 반환합니다. `getPersona`는 선택한 역할의 메타데이터와 프롬프트를 읽습니다. 존재하지 않는 식별자는 오류로 처리합니다.
-
-호스트 애플리케이션에서 기존 에이전트 정체성과 권한, 프로젝트 기억 범위를 유지하면서 역할 프롬프트를 추가하세요. 결과 품질은 실제 모델과 작업으로 평가해야 합니다. 프롬프트에 등장하는 기술 버전은 대상 프로젝트의 의존성과 대조하세요.
-
-## Soul 연동
-
-읽기 전용 역할 자료이므로 DB 없이 단독으로 사용할 수 있습니다. 역할 선택을 기억하려면 호스트에서 배포판 Soul 9.2의 `n2_kv_save` 도구를 호출합니다.
-
-```json
-{
-  "agent": "example-agent",
-  "project": "example-project",
-  "summary": "프론트엔드 검토에 dev/web-frontend 역할을 선택했다.",
-  "decisions": ["n2-personas 1.0.0의 dev/web-frontend 사용"],
-  "todo": []
-}
+```sh
+node demo.mjs
 ```
 
-`agent`와 `project`는 실제 사용자의 범위로 지정합니다. 필드명은 Soul의 기존 도구 계약을 따릅니다. 호스트는 저장 응답을 확인해야 합니다.
+`72`와 프런트엔드 역할 지침이 출력됩니다. 원하는 역할의 문장을 AI 요청에 추가해 사용할 수 있어요.
 
-## 검증
+## Soul과 함께 쓰기
 
-`npm test`로 72개 프로필 로딩, 개수, 경로 입력, 메타데이터 격리를 검사합니다. `npm pack --dry-run`으로 배포 파일 목록을 확인합니다.
+이 모듈은 자체 DB 없이 사용할 수 있습니다. 결과를 기억하려면 연결한 앱에서 Soul의 `n2_kv_save`를 호출해 저장하세요.
 
-MIT 라이선스를 적용하며, 원본 N2 Daebung의 저작권 고지를 포함합니다.
+## 다음 단계와 상세 안내
+
+[전체 사용 안내](https://github.com/choihyunsus/n2-personas/blob/main/docs/reference.ko.md)에서 실제 앱 연결, API, 지원 범위, 복구 절차와 검증 범위를 확인할 수 있습니다. [배포 파일](https://github.com/choihyunsus/n2-personas/releases/tag/v1.0.0)에는 설치할 버전과 변경 설명이 있습니다.
+
+처음 나오는 용어는 이렇게 읽으면 됩니다. **MCP**는 AI 앱의 도구 연결 방식, **DB**는 저장 파일, **호스트**는 이 모듈을 연결해 실행하는 앱입니다.
+
+사용·재배포 조건은 [라이선스](https://github.com/choihyunsus/n2-personas/blob/main/LICENSE)를 확인하세요. 의존 모듈에는 별도 조건이 적용될 수 있으며, 상업 이용 조건은 상세 안내에 함께 설명되어 있습니다.
