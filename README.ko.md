@@ -6,7 +6,20 @@
 
 [English](README.md)
 
+<p align="center">
+  <img src="https://github.com/choihyunsus/n2-personas/raw/refs/heads/main/docs/images/comic.png" alt="웹 화면 검토를 요청하고 → 역할 지침을 골라 → 다른 관점으로 살펴보고 → 제안을 검토합니다." width="640">
+</p>
+
+웹 화면 검토를 요청하고 → 역할 지침을 골라 → 다른 관점으로 살펴보고 → 제안을 검토합니다.
+
+기능을 이야기로 표현한 만화입니다. 실제 앱 화면은 아닙니다.
+
+<details>
+<summary>동작 흐름 펼쳐 보기</summary>
+
 ![역할 고르기 → 작업 지침에 추가 → 결과 검토](https://github.com/choihyunsus/n2-personas/raw/refs/heads/main/docs/images/overview.ko.svg)
+
+</details>
 
 ## 이런 때 사용하세요
 

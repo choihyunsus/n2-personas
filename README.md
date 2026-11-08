@@ -6,7 +6,20 @@
 
 [한국어](README.ko.md)
 
+<p align="center">
+  <img src="https://github.com/choihyunsus/n2-personas/raw/refs/heads/main/docs/images/comic.png" alt="Choose from 72 reusable sets of instructions for the role you want an AI to take." width="640">
+</p>
+
+Choose from 72 reusable sets of instructions for the role you want an AI to take.
+
+A story illustrating the feature, rather than a screenshot of the app.
+
+<details>
+<summary>View the workflow</summary>
+
 ![Choose a role → Add its instructions → Review the result](https://github.com/choihyunsus/n2-personas/raw/refs/heads/main/docs/images/overview.svg)
+
+</details>
 
 ## When to use it
 
